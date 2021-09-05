@@ -16,7 +16,7 @@
            	
            	<xs:complexType name="employeeInfo">
 		        <xs:sequence>
-		           <xs:element name="employeeId" type="xs:long"/>
+		           <xs:element name="id" type="xs:long"/>
 		                <xs:element name="name" type="xs:string"/>
 		                <xs:element name="department" type="xs:string"/>
 		                <xs:element name="salary" type="xs:double"/>
