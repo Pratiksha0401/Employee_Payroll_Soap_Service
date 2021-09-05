@@ -1,0 +1,7 @@
+com\payroll\wsdlClasses\AddEmployeeRequest.class
+com\payroll\wsdlClasses\EmployeeInfo.class
+com\payroll\wsdlClasses\package-info.class
+com\payroll\wsdlClasses\AddEmployeeResponse.class
+com\payroll\wsdlClasses\ObjectFactory.class
+com\payroll\EmployeePayrollApplication.class
+com\payroll\wsdlClasses\ServiceStatus.class
