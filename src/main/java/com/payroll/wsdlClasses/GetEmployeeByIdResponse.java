@@ -25,7 +25,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="serviceStatus" type="{http://payroll.com/employee}serviceStatus"/&gt;
  *         &lt;element name="employeeInfo" type="{http://payroll.com/employee}employeeInfo"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
@@ -37,40 +36,13 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "serviceStatus",
     "employeeInfo"
 })
-@XmlRootElement(name = "addEmployeeResponse")
-public class AddEmployeeResponse {
+@XmlRootElement(name = "getEmployeeByIdResponse")
+public class GetEmployeeByIdResponse {
 
-    @XmlElement(required = true)
-    protected ServiceStatus serviceStatus;
     @XmlElement(required = true)
     protected EmployeeInfo employeeInfo;
-
-    /**
-     * Gets the value of the serviceStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ServiceStatus }
-     *     
-     */
-    public ServiceStatus getServiceStatus() {
-        return serviceStatus;
-    }
-
-    /**
-     * Sets the value of the serviceStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ServiceStatus }
-     *     
-     */
-    public void setServiceStatus(ServiceStatus value) {
-        this.serviceStatus = value;
-    }
 
     /**
      * Gets the value of the employeeInfo property.
